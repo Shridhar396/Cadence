@@ -6,6 +6,16 @@ The core mechanic is a scroll-linked 3D deconstruction sequence where the headph
 
 ---
 
+## 📸 Preview
+
+### 1. 3D Spatial Deconstruction Hero (Canvas Scrollytelling)
+![Cadence 3D Deconstruction Hero](./public/screenshots/hero-preview.jpg)
+
+### 2. Spectral Waveform & Soundstage Dynamics
+![Spectral Waveform & Soundstage](./public/screenshots/soundstage-preview.jpg)
+
+---
+
 ## 🎧 Features
 
 - **Seamless Canvas Blending (`#050505`)**: Edge-feathering algorithms and radial vignette grading eliminate image boundaries for 100% immersive deconstruction.
@@ -63,7 +73,8 @@ npm run start
 ```
 ├── public/
 │   ├── ezgif-split/       # WebP deconstruction frames
-│   └── sequence/          # High-fidelity JPG frames
+│   ├── sequence/          # High-fidelity JPG frames
+│   └── screenshots/       # Live UI and scrollytelling previews
 ├── src/
 │   ├── app/
 │   │   ├── globals.css    # Minimalist scrollbars, glassmorphism, vignette
