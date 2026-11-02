@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cadence — High-End Scrollytelling Acoustic Landing Page
 
-## Getting Started
+An Awwwards-level interactive scrollytelling experience engineered with **Next.js 14 (App Router)**, **Framer Motion**, and **HTML5 Canvas**.
 
-First, run the development server:
+The core mechanic is a scroll-linked 3D deconstruction sequence where the headphone disassembles and reassembles as the user scrolls, seamlessly blended into a pure `#050505` dark-mode canvas.
 
+---
+
+## 🎧 Features
+
+- **Seamless Canvas Blending (`#050505`)**: Edge-feathering algorithms and radial vignette grading eliminate image boundaries for 100% immersive deconstruction.
+- **Buttery 60/120fps Scroll Interpolation**: Powered by Framer Motion `useScroll` with linear damping (`lerp`) on HTML5 Canvas.
+- **Responsive Contain-Fit & High-DPI Scaling**: Crisp rendering on mobile and 4K Retina screens with `window.devicePixelRatio`.
+- **Preloader & Telemetry**: Luxury acoustic telemetry preloader with dynamic audio wave animation and progress feedback.
+- **Deconstructed Hotspots**: Interactive inspection pins (`40mm Titanium Core` & `CNC Acoustic Enclosure`) at peak 60% disassembly.
+- **Psychoacoustic Soundstage Visualizer**: Interactive canvas frequency waveform with 3 acoustic profile tunings (`Studio Reference`, `Spatial Binaural`, `432Hz Pure Harmonic`).
+- **Architectural Material Selector**: Live finish preview for *Obsidian Dark*, *Lunar Silver*, and *Raw Champagne Titanium*.
+- **Pre-Order & Reservation Modal**: Interactive Batch 01 reservation system with simulated serial code generation.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animation**: Framer Motion
+- **Rendering**: HTML5 Canvas (Hardware accelerated)
+- **Icons**: Lucide React
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Shridhar396/Cadence.git
+cd Cadence
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Run the development server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+### 4. Build for Production
+```bash
+npm run build
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+├── public/
+│   ├── ezgif-split/       # WebP deconstruction frames
+│   └── sequence/          # High-fidelity JPG frames
+├── src/
+│   ├── app/
+│   │   ├── globals.css    # Minimalist scrollbars, glassmorphism, vignette
+│   │   ├── layout.tsx     # Typography, metadata, viewport configuration
+│   │   └── page.tsx       # Flagship landing page assembly
+│   └── components/
+│       ├── Navbar.tsx             # Floating glass header & audio toggle
+│       ├── HeadphoneScroll.tsx    # 400vh sticky canvas scrollytelling engine
+│       ├── SoundstageSection.tsx  # Dynamic waveform canvas & audio modes
+│       ├── EngineeringSection.tsx # 4-card structural anatomy bento grid
+│       ├── FinishesSection.tsx    # Color edition selector with ambient halo
+│       ├── SpecsSection.tsx       # Anechoic laboratory benchmark matrix
+│       ├── OrderSection.tsx       # Pre-order module with interactive modal
+│       └── Footer.tsx             # Minimal luxury audio lab footer
+└── README.md
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+MIT License. Built with precision for audiophiles and creative developers.
